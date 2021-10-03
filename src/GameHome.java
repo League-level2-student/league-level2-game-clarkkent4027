@@ -234,7 +234,8 @@ public class GameHome implements ActionListener {
 			frame.requestFocus();
 		}
 		if (e.getSource() == button2 && panel.currentState == panel.MENU) {
-			JOptionPane.showMessageDialog(null, "Play levels and unscramble the words to get points! Earn 35 points to win! ");
+			JOptionPane.showMessageDialog(null,
+					"Play levels and unscramble the words to get points! Earn 35 points to win! ");
 			frame.requestFocus();
 		}
 		if (e.getSource() == button3) {
@@ -247,9 +248,15 @@ public class GameHome implements ActionListener {
 			panel.remove(button8);
 			panel.remove(button9);
 			panel.remove(button10);
-			panel.add(button31);
-			panel.add(button32);
-			panel.add(button33);
+			if (button31 != null) {
+				panel.add(button31);
+			}
+			if (button32 != null) {
+				panel.add(button32);
+			}
+			if (button33 != null) {
+				panel.add(button33);
+			}
 			panel.remove(button41);
 			panel.remove(button42);
 			panel.remove(button43);
@@ -613,18 +620,19 @@ public class GameHome implements ActionListener {
 			if (answer31.equals("shark")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button31);
-				panel.points=panel.points+1;
-				System.out.println(panel.points);
+				panel.points = panel.points + 1;
+				button31 = null;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button32) {
 			String answer32 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer32.equals("clownfish")) {
+			if (answer32.equals("starfish")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button32);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
+				button32 = null;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -634,7 +642,8 @@ public class GameHome implements ActionListener {
 			if (answer33.equals("manatee")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button33);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 2;
+				button33 = null;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -644,7 +653,7 @@ public class GameHome implements ActionListener {
 			if (answer41.equals("Anakin")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button41);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -654,7 +663,7 @@ public class GameHome implements ActionListener {
 			if (answer42.equals("Mace Windu")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button42);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -664,7 +673,7 @@ public class GameHome implements ActionListener {
 			if (answer43.equals("Jyn Erso")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button43);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -674,7 +683,7 @@ public class GameHome implements ActionListener {
 			if (answer51.equals("daisy")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button51);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -684,7 +693,7 @@ public class GameHome implements ActionListener {
 			if (answer52.equals("carnation")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button52);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -694,7 +703,7 @@ public class GameHome implements ActionListener {
 			if (answer53.equals("magnolia")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button53);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -704,27 +713,27 @@ public class GameHome implements ActionListener {
 			if (answer61.equals("azure")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button61);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button62) {
 			String answer62 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer62.equals("salmon")) {
+			if (answer62.equals("burgundy")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button62);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button63) {
 			String answer63 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer63.equals("burgundy")) {
+			if (answer63.equals("salmon")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button63);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -735,7 +744,7 @@ public class GameHome implements ActionListener {
 			if (answer71.equals("Aladdin")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button71);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -745,7 +754,7 @@ public class GameHome implements ActionListener {
 			if (answer72.equals("Zootopia")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button72);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -755,18 +764,18 @@ public class GameHome implements ActionListener {
 			if (answer73.equals("Onward")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button73);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 3;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
-		
+
 		if (e.getSource() == button81) {
 			String answer71 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
 			if (answer71.equals("mantis")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button81);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -776,7 +785,7 @@ public class GameHome implements ActionListener {
 			if (answer72.equals("ladybug")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button82);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -786,7 +795,7 @@ public class GameHome implements ActionListener {
 			if (answer73.equals("termite")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button83);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -796,61 +805,62 @@ public class GameHome implements ActionListener {
 			if (answer71.equals("viola")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button91);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button92) {
 			String answer72 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer72.equals("trombone")) {
+			if (answer72.equals("tambourine")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button92);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button93) {
 			String answer73 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer73.equals("tambourine")) {
+			if (answer73.equals("trombone")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button93);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button101) {
 			String answer71 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer71.equals("viola")) {
+			if (answer71.equals("tennis")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button101);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button102) {
 			String answer72 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer72.equals("trombone")) {
+			if (answer72.equals("archery")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button102);
-				panel.points=panel.points+1;
+				panel.points = panel.points + 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 		if (e.getSource() == button103) {
 			String answer73 = JOptionPane.showInputDialog("WHAT IS THE ANSWER?");
-			if (answer73.equals("tambourine")) {
+			if (answer73.equals("cycling")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				panel.remove(button103);
-				panel.points=panel.points+2;
+				panel.points = panel.points + 3;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
+		score.setText(panel.points + " points");
 
 		frame.pack();
 	}

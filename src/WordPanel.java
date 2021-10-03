@@ -98,8 +98,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("R A S H K", 70, 220);
-		g.drawString("F O W L S H I N C", 70, 340);
-		g.drawString("T E A M E A N", 70, 460);
+		g.drawString("H I S F A R T S", 70, 340);
+		g.drawString("T E A M E A N (x2pts)", 70, 460);
 
 	}
 
@@ -113,7 +113,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("N I N K A A", 70, 220);
 		g.drawString("C E M A  D N I U W", 70, 340);
-		g.drawString("N J Y  S O R E", 70, 460);
+		g.drawString("N J Y  S O R E (x2pts)", 70, 460);
 	}
 
 	void drawl3State(Graphics g) {
@@ -126,7 +126,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("Y A S I D", 70, 220);
 		g.drawString("T O N A R N I A C", 70, 340);
-		g.drawString("O M A N G A I L", 70, 460);
+		g.drawString("O M A N G A I L (x2pts)", 70, 460);
 	}
 
 	void drawl4State(Graphics g) {
@@ -138,8 +138,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("R E A U Z", 70, 220);
-		g.drawString("M A S O N L", 70, 340);
-		g.drawString("D U N Y G R U B", 70, 460);
+		g.drawString("D U N Y G R U B", 70, 340);
+		g.drawString("M A S O N L (x2pts)", 70, 460);
 	}
 
 	void drawl5State(Graphics g) {
@@ -152,7 +152,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("L A I N D A D", 70, 220);
 		g.drawString("T O P A Z O I O", 70, 340);
-		g.drawString("D A R W O N", 70, 460);
+		g.drawString("D A R W O N (x3pts)", 70, 460);
 	}
 
 	void drawl6State(Graphics g) {
@@ -177,8 +177,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("O L I V A", 70, 220);
-		g.drawString("M O O N B E R T", 70, 340);
-		g.drawString("B A M I N E T O U R", 70, 460);
+		g.drawString("B A M I N E T O U R", 70, 340);
+		g.drawString("M O O N B E R T", 70, 460);
 	}
 	
 	void drawl8State(Graphics g) {
@@ -186,12 +186,12 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.fillRect(0, 0, GameHome.WIDTH, GameHome.HEIGHT);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("LEVEL 8 : ???", 60, 100);
+		g.drawString("LEVEL 8 : SPORTS", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("O L I V A", 70, 220);
-		g.drawString("M O O N B E R T", 70, 340);
-		g.drawString("B A M I N E T O U R", 70, 460);
+		g.drawString("N I S T E N", 70, 220);
+		g.drawString("C R Y H E A R (x2pts)", 70, 340);
+		g.drawString("N I C G L C Y (x3pts)", 70, 460);
 	}
 
 	Font titleFont;
