@@ -34,7 +34,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 	final int L6 = 7;
 	final int L7 = 8;
 	final int L8 = 9;
-	int points = 0;
+	public static int points = 0;
 	int currentState = MENU;
 	Timer frameDraw;
 	public BufferedImage image;
@@ -69,7 +69,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 
 	void updatel7State() {
 	}
-	
+
 	void updatel8State() {
 	}
 
@@ -97,7 +97,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.drawString("LEVEL 1 : SEA ANIMALS", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("R A S H K", 70, 220);
+		g.drawString("B O L T E R S", 70, 220);
 		g.drawString("H I S F A R T S", 70, 340);
 		g.drawString("T E A M E A N (x2pts)", 70, 460);
 
@@ -112,8 +112,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("N I N K A A", 70, 220);
-		g.drawString("C E M A  D N I U W", 70, 340);
-		g.drawString("N J Y  S O R E (x2pts)", 70, 460);
+		g.drawString("E R E D O G", 70, 340);
+		g.drawString("N J Y  S O R E (x2)", 70, 460);
 	}
 
 	void drawl3State(Graphics g) {
@@ -124,9 +124,9 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.drawString("LEVEL 3 : FLOWERS", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("Y A S I D", 70, 220);
+		g.drawString("C H I D O R", 70, 220);
 		g.drawString("T O N A R N I A C", 70, 340);
-		g.drawString("O M A N G A I L (x2pts)", 70, 460);
+		g.drawString("O M A N G A I L (x2)", 70, 460);
 	}
 
 	void drawl4State(Graphics g) {
@@ -139,7 +139,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("R E A U Z", 70, 220);
 		g.drawString("D U N Y G R U B", 70, 340);
-		g.drawString("M A S O N L (x2pts)", 70, 460);
+		g.drawString("M A S O N L (x2)", 70, 460);
 	}
 
 	void drawl5State(Graphics g) {
@@ -151,8 +151,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("L A I N D A D", 70, 220);
-		g.drawString("T O P A Z O I O", 70, 340);
-		g.drawString("D A R W O N (x3pts)", 70, 460);
+		g.drawString("A F A S T A N I ", 70, 340);
+		g.drawString("D A R W O N (x3)", 70, 460);
 	}
 
 	void drawl6State(Graphics g) {
@@ -165,7 +165,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("N A S T I M", 70, 220);
 		g.drawString("G L A D B U Y", 70, 340);
-		g.drawString("M I T T E R E", 70, 460);
+		g.drawString("M I T T E R E (x2)", 70, 460);
 	}
 
 	void drawl7State(Graphics g) {
@@ -178,9 +178,9 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("O L I V A", 70, 220);
 		g.drawString("B A M I N E T O U R", 70, 340);
-		g.drawString("M O O N B E R T", 70, 460);
+		g.drawString("M O O N B E R T (x2)", 70, 460);
 	}
-	
+
 	void drawl8State(Graphics g) {
 		g.setColor(Color.YELLOW);
 		g.fillRect(0, 0, GameHome.WIDTH, GameHome.HEIGHT);
@@ -190,8 +190,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
 		g.drawString("N I S T E N", 70, 220);
-		g.drawString("C R Y H E A R (x2pts)", 70, 340);
-		g.drawString("N I C G L C Y (x3pts)", 70, 460);
+		g.drawString("C R Y H E A R (x3)", 70, 340);
+		g.drawString("N I C G L C Y (x3)", 70, 460);
 	}
 
 	Font titleFont;
@@ -263,7 +263,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 	@Override
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
-		if (e.getKeyCode()==KeyEvent.VK_BACK_SPACE) {
+		if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
 			System.out.println(points);
 		}
 
@@ -278,7 +278,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
-	
+
 	}
 
 	@Override
