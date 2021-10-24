@@ -4,11 +4,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-public class L2 extends LEVEL {
-	public L2() {
-		buttons.add(new JButton("Anakin"));
-		buttons.add(new JButton("Greedo"));
-		buttons.add(new JButton("Jyn Erso"));
+public class Level7 extends LEVEL {
+	public Level7() {
+		buttons.add(new JButton("viola"));
+		buttons.add(new JButton("tambourine"));
+		buttons.add(new JButton("trombone"));
 
 		for (JButton b : buttons) {
 			b.addActionListener(this);
@@ -20,7 +20,7 @@ public class L2 extends LEVEL {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
-		if (b.getText().equals("Anakin")) {
+		if (b.getText().equals("viola")) {
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			remove(buttons.get(0));
 			WordPanel.points += 1;
@@ -29,7 +29,7 @@ public class L2 extends LEVEL {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 		}
 
-		if (b.getText().equals("Greedo")) {
+		if (b.getText().equals("tambourine")) {
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			remove(buttons.get(1));
 			WordPanel.points += 1;
@@ -38,13 +38,14 @@ public class L2 extends LEVEL {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 
 		}
-		if (b.getText().equals("Jyn Erso")) {
+		if (b.getText().equals("trombone")) {
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			remove(buttons.get(2));
-			WordPanel.points += 2;
+			WordPanel.points += 1;
 			b = null;
 		} else {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 		}
 	}
 }
+

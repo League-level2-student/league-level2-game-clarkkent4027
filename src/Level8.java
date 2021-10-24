@@ -4,8 +4,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-public class L8 extends LEVEL {
-	public L8() {
+public class Level8 extends LEVEL {
+	public Level8() {
 		buttons.add(new JButton("tennis"));
 		buttons.add(new JButton("archery"));
 		buttons.add(new JButton("cycling"));

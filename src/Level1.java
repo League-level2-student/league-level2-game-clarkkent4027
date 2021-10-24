@@ -4,12 +4,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-public class L1 extends LEVEL {
-	public L1() {
+public class Level1 extends LEVEL {
+	public Level1() {
 		buttons.add(new JButton("lobster"));
 		buttons.add(new JButton("starfish"));
 		buttons.add(new JButton("manatee"));
-
 		for (JButton b : buttons) {
 			b.addActionListener(this);
 			add(b);
@@ -24,7 +23,6 @@ public class L1 extends LEVEL {
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			remove(buttons.get(0));
 			WordPanel.points += 1;
-			b = null;
 		} else {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 		}
@@ -33,7 +31,6 @@ public class L1 extends LEVEL {
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			remove(buttons.get(1));
 			WordPanel.points += 1;
-			b = null;
 		} else {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 
@@ -42,7 +39,6 @@ public class L1 extends LEVEL {
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			remove(buttons.get(2));
 			WordPanel.points += 2;
-			b = null;
 		} else {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 		}

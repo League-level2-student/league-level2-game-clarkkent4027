@@ -4,8 +4,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-public class L3 extends LEVEL {
-	public L3() {
+public class Level3 extends LEVEL {
+	public Level3() {
 		buttons.add(new JButton("orchid"));
 		buttons.add(new JButton("carnation"));
 		buttons.add(new JButton("magnolia"));
