@@ -15,37 +15,13 @@ public class GameHome implements ActionListener {
 	JButton button1;
 	JButton button2;
 	JButton L1;
-	JButton button31;
-	JButton button32;
-	JButton button33;
 	JButton L2;
-	JButton button41;
-	JButton button42;
-	JButton button43;
 	JButton L3;
-	JButton button51;
-	JButton button52;
-	JButton button53;
 	JButton L4;
-	JButton button61;
-	JButton button62;
-	JButton button63;
 	JButton L5;
-	JButton button71;
-	JButton button72;
-	JButton button73;
 	JButton L6;
-	JButton button81;
-	JButton button82;
-	JButton button83;
 	JButton L7;
-	JButton button91;
-	JButton button92;
-	JButton button93;
 	JButton L8;
-	JButton button101;
-	JButton button102;
-	JButton button103;
 	JButton RETURN;
 	public static JLabel score;
 	public static final int HEIGHT = 700;
@@ -129,45 +105,56 @@ public class GameHome implements ActionListener {
 		} else if (e.getSource() == button2 && panel.currentState == panel.MENU) {
 			JOptionPane.showMessageDialog(null,
 					"Play levels and unscramble the words to get points! Earn 35 points to win! ");
+			panel.currentState = panel.MENU;
+			panel.add(button1);
+			panel.add(button2);
 			frame.requestFocus();
 		} else if (e.getSource() == L1) {
 			panel.currentState = panel.L1;
 			panel.add(new Level1());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L2) {
 			panel.currentState = panel.L2;
 			panel.add(new Level2());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L3) {
 			panel.currentState = panel.L3;
 			panel.add(new Level3());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L4) {
 			panel.currentState = panel.L4;
 			panel.add(new Level4());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L5) {
 			panel.currentState = panel.L5;
 			panel.add(new Level5());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L6) {
 			panel.currentState = panel.L6;
 			panel.add(new Level6());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L7) {
 			panel.currentState = panel.L7;
 			panel.add(new Level7());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L8) {
 			panel.currentState = panel.L8;
 			panel.add(new Level8());
+			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (panel.currentState == panel.SELECT) {

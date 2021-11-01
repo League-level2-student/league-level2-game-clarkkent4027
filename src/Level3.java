@@ -6,9 +6,19 @@ import javax.swing.JOptionPane;
 
 public class Level3 extends LEVEL {
 	public Level3() {
-		buttons.add(new JButton("orchid"));
-		buttons.add(new JButton("carnation"));
-		buttons.add(new JButton("magnolia"));
+		setBounds(0, 0, GameHome.HEIGHT, GameHome.WIDTH);
+		JButton b31 = new JButton("Click to answer!");
+		JButton b32 = new JButton("Click to answer!");
+		JButton b33 = new JButton("Click to answer!");
+		b31.setBounds(100, 50, 200, 300);
+		b32.setBounds(100, 50, 300, 300);
+		b33.setBounds(100, 50, 400, 300);
+		b31.addActionListener(this);
+		b32.addActionListener(this);
+		b33.addActionListener(this);
+		buttons.add(b31);
+		buttons.add(b32);
+		buttons.add(b33);
 
 		for (JButton b : buttons) {
 			b.addActionListener(this);
@@ -48,4 +58,3 @@ public class Level3 extends LEVEL {
 		}
 	}
 }
-

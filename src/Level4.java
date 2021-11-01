@@ -6,9 +6,19 @@ import javax.swing.JOptionPane;
 
 public class Level4 extends LEVEL {
 	public Level4() {
-		buttons.add(new JButton("azure"));
-		buttons.add(new JButton("burgundy"));
-		buttons.add(new JButton("salmon"));
+		setBounds(0, 0, GameHome.HEIGHT, GameHome.WIDTH);
+		JButton b41 = new JButton("Click to answer!");
+		JButton b42 = new JButton("Click to answer!");
+		JButton b43 = new JButton("Click to answer!");
+		b41.setBounds(100, 50, 200, 300);
+		b42.setBounds(100, 50, 300, 300);
+		b43.setBounds(100, 50, 400, 300);
+		b41.addActionListener(this);
+		b42.addActionListener(this);
+		b43.addActionListener(this);
+		buttons.add(b41);
+		buttons.add(b42);
+		buttons.add(b43);
 
 		for (JButton b : buttons) {
 			b.addActionListener(this);

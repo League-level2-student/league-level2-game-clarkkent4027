@@ -6,9 +6,20 @@ import javax.swing.JOptionPane;
 
 public class Level8 extends LEVEL {
 	public Level8() {
-		buttons.add(new JButton("tennis"));
-		buttons.add(new JButton("archery"));
-		buttons.add(new JButton("cycling"));
+		setBounds(0, 0, GameHome.HEIGHT, GameHome.WIDTH);
+		JButton b81 = new JButton("Click to answer!");
+		JButton b82 = new JButton("Click to answer!");
+		JButton b83 = new JButton("Click to answer!");
+		b81.setBounds(100, 50, 200, 300);
+		b82.setBounds(100, 50, 300, 300);
+		b83.setBounds(100, 50, 400, 300);
+		b81.addActionListener(this);
+		b82.addActionListener(this);
+		b83.addActionListener(this);
+		buttons.add(b81);
+		buttons.add(b82);
+		buttons.add(b83);
+
 
 		for (JButton b : buttons) {
 			b.addActionListener(this);
