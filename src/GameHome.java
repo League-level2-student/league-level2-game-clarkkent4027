@@ -1,3 +1,4 @@
+
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -41,7 +42,7 @@ public class GameHome implements ActionListener {
 		L7 = new JButton("7");
 		L8 = new JButton("8");
 		RETURN = new JButton("RETURN");
-		score = new JLabel(panel.points + " points");
+		score = new JLabel(WordPanel.points + " points");
 		panel.setLayout(null);
 		button1.setBounds(120, 400, 200, 100);
 		button2.setBounds(370, 400, 200, 100);
@@ -104,7 +105,7 @@ public class GameHome implements ActionListener {
 			panel.add(score);
 		} else if (e.getSource() == button2 && panel.currentState == panel.MENU) {
 			JOptionPane.showMessageDialog(null,
-					"Play levels and unscramble the words to get points! Earn 35 points to win! ");
+					"Play levels and unscramble the words to get points! Earn 20 points to win! ");
 			panel.currentState = panel.MENU;
 			panel.add(button1);
 			panel.add(button2);
@@ -168,6 +169,19 @@ public class GameHome implements ActionListener {
 			panel.add(L8);
 			panel.setSize(700, 700);
 			frame.requestFocus();
+		} else if (panel.currentState == panel.END) {
+			panel.remove(L1);
+			panel.remove(L2);
+			panel.remove(L3);
+			panel.remove(L4);
+			panel.remove(L5);
+			panel.remove(L6);
+			panel.remove(L7);
+			panel.remove(L8);
+			panel.remove(RETURN);
+			panel.remove(score);
+			panel.setSize(700, 700);
+			frame.requestFocus();
 		} else if (e.getSource() == RETURN) {
 			panel.currentState = panel.SELECT;
 			panel.add(L1);
@@ -178,9 +192,23 @@ public class GameHome implements ActionListener {
 			panel.add(L6);
 			panel.add(L7);
 			panel.add(L8);
+			panel.add(score);
+		}
+		if (WordPanel.points > 20) {
+			panel.currentState = panel.END;
+			panel.remove(L1);
+			panel.remove(L2);
+			panel.remove(L3);
+			panel.remove(L4);
+			panel.remove(L5);
+			panel.remove(L6);
+			panel.remove(L7);
+			panel.remove(L8);
+			panel.remove(RETURN);
+			panel.remove(score);
 		}
 
-		score.setText(panel.points + " points");
+		score.setText(WordPanel.points + " points");
 
 		frame.pack();
 	}

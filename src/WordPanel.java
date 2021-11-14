@@ -34,6 +34,7 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 	final int L6 = 7;
 	final int L7 = 8;
 	final int L8 = 9;
+	final int END = 10;
 	public static int points = 0;
 	int currentState = MENU;
 	Timer frameDraw;
@@ -71,6 +72,9 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 	}
 
 	void updatel8State() {
+	}
+	
+	void updateENDState() {
 	}
 
 	void drawMenuState(Graphics g) {
@@ -194,6 +198,17 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 		g.drawString("N I C G L C Y (x3)", 70, 460);
 	}
 
+	void drawENDState(Graphics g) {
+		g.setColor(Color.YELLOW);
+		g.fillRect(0, 0, GameHome.WIDTH, GameHome.HEIGHT);
+		g.setFont(titleFont);
+		g.setColor(Color.DARK_GRAY);
+		g.drawString("YOU WIN!!!", 100, 200);
+		g.setFont(titleFont);
+		g.setColor(Color.DARK_GRAY);
+		g.drawString("THANKS FOR PLAYING", 70, 450);
+	}
+
 	Font titleFont;
 
 	WordPanel() {
@@ -224,6 +239,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 			drawl7State(g);
 		} else if (currentState == L8) {
 			drawl8State(g);
+		} else if (currentState == END) {
+			drawENDState(g);
 		}
 	}
 
@@ -250,6 +267,8 @@ public class WordPanel extends JPanel implements ActionListener, KeyListener, Mo
 			updatel7State();
 		} else if (currentState == L8) {
 			updatel8State();
+		} else if (currentState == END) {
+			updateENDState();
 		}
 		repaint();
 
