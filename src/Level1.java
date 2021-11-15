@@ -11,6 +11,7 @@ import javax.swing.SwingUtilities;
 
 public class Level1 extends LEVEL {
 	public Level1() {
+		int d1;
 		setBounds(0, 0, 500, 500);
 		JButton b11 = new JButton("Click to answer!");
 		JButton b12 = new JButton("Click to answer!!");
@@ -38,7 +39,7 @@ public class Level1 extends LEVEL {
 		g.drawString("LEVEL 1 : SEA ANIMALS", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("B O L T E R S", 70, 220);
+		g.drawString("T U C O O P S", 70, 220);
 		g.drawString("H I S F A R T S", 70, 340);
 		g.drawString("T E A M E A N (x2pts)", 70, 460);
 
@@ -48,14 +49,15 @@ public class Level1 extends LEVEL {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
-		System.out.println("hello!");
 		String answer11 = ("o");
+		int d1 = 0;
 		if (b.getText().equals("Click to answer!")) {
 			answer11 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer11.equals("lobster")) {
+			if (answer11.equals("octopus")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(0));
 				WordPanel.points += 1;
+				d1 += 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -68,6 +70,7 @@ public class Level1 extends LEVEL {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(1));
 				WordPanel.points += 1;
+				d1 += 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
@@ -80,9 +83,14 @@ public class Level1 extends LEVEL {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(2));
 				WordPanel.points += 2;
+				d1 += 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
+
+		}
+		if (d1 == 3) {
+			complete = true;
 		}
 		GameHome.score.setText(WordPanel.points + " points");
 	}

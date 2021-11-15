@@ -16,9 +16,6 @@ public class Level6 extends LEVEL {
 		b61.setBounds(100, 50, 200, 300);
 		b62.setBounds(100, 50, 300, 300);
 		b63.setBounds(100, 50, 400, 300);
-		b61.addActionListener(this);
-		b62.addActionListener(this);
-		b63.addActionListener(this);
 		buttons.add(b61);
 		buttons.add(b62);
 		buttons.add(b63);

@@ -15,6 +15,7 @@ public class GameHome implements ActionListener {
 	WordPanel panel;
 	JButton button1;
 	JButton button2;
+	Level1 lev1;
 	JButton L1;
 	JButton L2;
 	JButton L3;
@@ -111,8 +112,11 @@ public class GameHome implements ActionListener {
 			panel.add(button2);
 			frame.requestFocus();
 		} else if (e.getSource() == L1) {
+			if (lev1 == null) {
+				lev1 = new Level1();
+			}
 			panel.currentState = panel.L1;
-			panel.add(new Level1());
+			panel.add(lev1);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
@@ -182,9 +186,12 @@ public class GameHome implements ActionListener {
 			panel.remove(score);
 			panel.setSize(700, 700);
 			frame.requestFocus();
+
 		} else if (e.getSource() == RETURN) {
 			panel.currentState = panel.SELECT;
-			panel.add(L1);
+			if (lev1 != null && lev1.complete == false) {
+				panel.add(L1);
+			}
 			panel.add(L2);
 			panel.add(L3);
 			panel.add(L4);

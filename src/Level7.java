@@ -16,9 +16,6 @@ public class Level7 extends LEVEL {
 		b71.setBounds(100, 50, 200, 300);
 		b72.setBounds(100, 50, 300, 300);
 		b73.setBounds(100, 50, 400, 300);
-		b71.addActionListener(this);
-		b72.addActionListener(this);
-		b73.addActionListener(this);
 		buttons.add(b71);
 		buttons.add(b72);
 		buttons.add(b73);

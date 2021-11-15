@@ -16,9 +16,6 @@ public class Level8 extends LEVEL {
 		b81.setBounds(100, 50, 200, 300);
 		b82.setBounds(100, 50, 300, 300);
 		b83.setBounds(100, 50, 400, 300);
-		b81.addActionListener(this);
-		b82.addActionListener(this);
-		b83.addActionListener(this);
 		buttons.add(b81);
 		buttons.add(b82);
 		buttons.add(b83);

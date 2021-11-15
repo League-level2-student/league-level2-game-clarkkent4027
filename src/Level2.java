@@ -16,9 +16,6 @@ public class Level2 extends LEVEL {
 		b21.setBounds(100, 50, 200, 300);
 		b22.setBounds(100, 50, 300, 300);
 		b23.setBounds(100, 50, 400, 300);
-		b21.addActionListener(this);
-		b22.addActionListener(this);
-		b23.addActionListener(this);
 		buttons.add(b21);
 		buttons.add(b22);
 		buttons.add(b23);
