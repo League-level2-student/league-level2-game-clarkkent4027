@@ -13,9 +13,9 @@ public class Level1 extends LEVEL {
 	public Level1() {
 		int d1;
 		setBounds(0, 0, 500, 500);
-		JButton b11 = new JButton("Click to answer!");
-		JButton b12 = new JButton("Click to answer!!");
-		JButton b13 = new JButton("Click to answer!!!");
+		JButton b11 = new JButton("tucoops");
+		JButton b12 = new JButton("hisfarts");
+		JButton b13 = new JButton("teamean");
 		b11.setBounds(100, 50, 400, 300);
 		b12.setBounds(100, 50, 600, 300);
 		b13.setBounds(100, 50, 800, 300);
@@ -51,7 +51,7 @@ public class Level1 extends LEVEL {
 		JButton b = (JButton) e.getSource();
 		String answer11 = ("o");
 		int d1 = 0;
-		if (b.getText().equals("Click to answer!")) {
+		if (b.getText().equals("tucoops")) {
 			answer11 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer11.equals("octopus")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
@@ -64,7 +64,7 @@ public class Level1 extends LEVEL {
 		}
 
 		String answer12 = ("i");
-		if (b.getText().equals("Click to answer!!")) {
+		if (b.getText().equals("hisfarts")) {
 			answer12 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer12.equals("starfish")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
@@ -76,7 +76,7 @@ public class Level1 extends LEVEL {
 			}
 		}
 
-		if (b.getText().equals("Click to answer!!!")) {
+		if (b.getText().equals("teamean")) {
 			String answer13 = (".");
 			answer13 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer13.equals("manatee")) {

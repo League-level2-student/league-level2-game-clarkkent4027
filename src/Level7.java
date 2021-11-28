@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class Level7 extends LEVEL {
 	public Level7() {
 		setBounds(0, 0, 500, 500);
-		JButton b71 = new JButton("Click to answer!");
-		JButton b72 = new JButton("Click to answer!!");
-		JButton b73 = new JButton("Click to answer!!!");
+		JButton b71 = new JButton("oliva");
+		JButton b72 = new JButton("baminetour");
+		JButton b73 = new JButton("moonbert");
 		b71.setBounds(100, 50, 200, 300);
 		b72.setBounds(100, 50, 300, 300);
 		b73.setBounds(100, 50, 400, 300);
@@ -46,7 +46,7 @@ public class Level7 extends LEVEL {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
 		String answer71 = ("o");
-		if (b.getText().equals("Click to answer!")) {
+		if (b.getText().equals("oliva")) {
 			answer71 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer71.equals("viola")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
@@ -58,7 +58,7 @@ public class Level7 extends LEVEL {
 		}
 
 		String answer72 = ("i");
-		if (b.getText().equals("Click to answer!!")) {
+		if (b.getText().equals("baminetour")) {
 			answer72 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer72.equals("tambourine")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
@@ -69,7 +69,7 @@ public class Level7 extends LEVEL {
 			}
 		}
 
-		if (b.getText().equals("Click to answer!!!")) {
+		if (b.getText().equals("moonbert")) {
 			String answer73 = (".");
 			answer73 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer73.equals("trombone")) {

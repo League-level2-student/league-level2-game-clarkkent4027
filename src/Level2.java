@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class Level2 extends LEVEL {
 	public Level2() {
 		setBounds(0, 0, 500, 500);
-		JButton b21 = new JButton("Click to answer");
-		JButton b22 = new JButton("Click to answer !");
-		JButton b23 = new JButton("Click to answer !!");
+		JButton b21 = new JButton("soakah");
+		JButton b22 = new JButton("eredog");
+		JButton b23 = new JButton("njy sore");
 		b21.setBounds(100, 50, 200, 300);
 		b22.setBounds(100, 50, 300, 300);
 		b23.setBounds(100, 50, 400, 300);
@@ -47,7 +47,7 @@ public class Level2 extends LEVEL {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
 		String answer21 = ("o");
-		if (b.getText().equals("Click to answer")) {
+		if (b.getText().equals("soakah")) {
 			answer21 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer21.equals("Ahsoka")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
@@ -61,7 +61,7 @@ public class Level2 extends LEVEL {
 		String answer22 = ("i");
 		if (b.getText().equals("Click to answer !")) {
 			answer22 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer22.equals("Greedo")) {
+			if (answer22.equals("eredog")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(1));
 				WordPanel.points += 1;
@@ -73,7 +73,7 @@ public class Level2 extends LEVEL {
 		if (b.getText().equals("Click to answer !!")) {
 			String answer23 = (".");
 			answer23 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer23.equals("Jyn Erso")) {
+			if (answer23.equals("njy sore")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(2));
 				WordPanel.points += 2;

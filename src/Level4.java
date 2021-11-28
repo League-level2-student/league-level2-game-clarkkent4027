@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class Level4 extends LEVEL {
 	public Level4() {
 		setBounds(0, 0, 500, 500);
-		JButton b41 = new JButton("Click to answer!");
-		JButton b42 = new JButton("Click to answer!!");
-		JButton b43 = new JButton("Click to answer!!!");
+		JButton b41 = new JButton("reauz");
+		JButton b42 = new JButton("celstar");
+		JButton b43 = new JButton("salmon");
 		b41.setBounds(100, 50, 200, 300);
 		b42.setBounds(100, 50, 300, 300);
 		b43.setBounds(100, 50, 400, 300);

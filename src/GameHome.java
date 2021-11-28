@@ -217,9 +217,7 @@ public class GameHome implements ActionListener {
 
 		} else if (e.getSource() == RETURN) {
 			panel.currentState = panel.SELECT;
-			if (lev1 != null && lev1.complete == false) {
-				panel.add(L1);
-			}
+			panel.add(L1);
 			panel.add(L2);
 			panel.add(L3);
 			panel.add(L4);
