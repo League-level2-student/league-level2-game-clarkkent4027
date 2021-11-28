@@ -16,6 +16,13 @@ public class GameHome implements ActionListener {
 	JButton button1;
 	JButton button2;
 	Level1 lev1;
+	Level2 lev2;
+	Level3 lev3;
+	Level4 lev4;
+	Level5 lev5;
+	Level6 lev6;
+	Level7 lev7;
+	Level8 lev8;
 	JButton L1;
 	JButton L2;
 	JButton L3;
@@ -106,7 +113,7 @@ public class GameHome implements ActionListener {
 			panel.add(score);
 		} else if (e.getSource() == button2 && panel.currentState == panel.MENU) {
 			JOptionPane.showMessageDialog(null,
-					"Play levels and unscramble the words to get points! Earn 20 points to win! ");
+					"Play levels and unscramble the words to get points! Earn 15 points to win! ");
 			panel.currentState = panel.MENU;
 			panel.add(button1);
 			panel.add(button2);
@@ -121,44 +128,65 @@ public class GameHome implements ActionListener {
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L2) {
+			if (lev2 == null) {
+				lev2 = new Level2();
+			}
 			panel.currentState = panel.L2;
-			panel.add(new Level2());
+			panel.add(lev2);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L3) {
+			if (lev3 == null) {
+				lev3 = new Level3();
+			}
 			panel.currentState = panel.L3;
-			panel.add(new Level3());
+			panel.add(lev3);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L4) {
+			if (lev4 == null) {
+				lev4 = new Level4();
+			}
 			panel.currentState = panel.L4;
-			panel.add(new Level4());
+			panel.add(lev4);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L5) {
+			if (lev5 == null) {
+				lev5 = new Level5();
+			}
 			panel.currentState = panel.L5;
-			panel.add(new Level5());
+			panel.add(lev5);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L6) {
+			if (lev6 == null) {
+				lev6 = new Level6();
+			}
 			panel.currentState = panel.L6;
-			panel.add(new Level6());
+			panel.add(lev6);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L7) {
+			if (lev7 == null) {
+				lev7 = new Level7();
+			}
 			panel.currentState = panel.L7;
-			panel.add(new Level7());
+			panel.add(lev7);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
 		} else if (e.getSource() == L8) {
+			if (lev8 == null) {
+				lev8 = new Level8();
+			}
 			panel.currentState = panel.L8;
-			panel.add(new Level8());
+			panel.add(lev8);
 			panel.add(score);
 			panel.add(RETURN);
 			frame.requestFocus();
@@ -201,7 +229,7 @@ public class GameHome implements ActionListener {
 			panel.add(L8);
 			panel.add(score);
 		}
-		if (WordPanel.points > 20) {
+		if (WordPanel.points > 14) {
 			panel.currentState = panel.END;
 			panel.remove(L1);
 			panel.remove(L2);
