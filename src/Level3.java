@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public class Level3 extends LEVEL {
 	public Level3() {
 		setBounds(0, 0, 500, 500);
-		JButton b31 = new JButton("chidor");
+		JButton b31 = new JButton("dircho");
 		JButton b32 = new JButton("tonarniac");
 		JButton b33 = new JButton("omangail");
 		b31.setBounds(100, 50, 200, 300);
@@ -36,7 +36,7 @@ public class Level3 extends LEVEL {
 		g.drawString("LEVEL 3 : FLOWERS", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("C H I D O R", 70, 220);
+		g.drawString("D I R C H O", 70, 220);
 		g.drawString("T O N A R N I A C", 70, 340);
 		g.drawString("O M A N G A I L (x2)", 70, 460);
 	}
@@ -46,7 +46,7 @@ public class Level3 extends LEVEL {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
 		String answer31 = ("o");
-		if (b.getText().equals("chidor")) {
+		if (b.getText().equals("dircho")) {
 			answer31 = JOptionPane.showInputDialog(null, "What is the answer?");
 			if (answer31.equals("orchid")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");

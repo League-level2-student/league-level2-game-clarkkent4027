@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class Level8 extends LEVEL {
 	public Level8() {
 		setBounds(0, 0, 500, 500);
-		JButton b81 = new JButton("nisten");
-		JButton b82 = new JButton("cryhear");
-		JButton b83 = new JButton("nicglcy");
+		JButton b81 = new JButton("Farloid");
+		JButton b82 = new JButton("hophoptaylers");
+		JButton b83 = new JButton("whater");
 		b81.setBounds(100, 50, 200, 300);
 		b82.setBounds(100, 50, 300, 300);
 		b83.setBounds(100, 50, 400, 300);
@@ -33,12 +33,12 @@ public class Level8 extends LEVEL {
 		g.fillRect(0, 0, GameHome.WIDTH, GameHome.HEIGHT);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("LEVEL 8 : SPORTS", 60, 100);
+		g.drawString("LEVEL 8 : MYSTERY??", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("N I S T E N", 70, 220);
-		g.drawString("C R Y H E A R (x3)", 70, 340);
-		g.drawString("N I C G L C Y (x3)", 70, 460);
+		g.drawString("F A R L O I D (x3)", 70, 220);
+		g.drawString("HOPHOPTAYLERS(x3)", 70, 340);
+		g.drawString("W H A T E R (x3)", 70, 460);
 	}
 
 	@Override
@@ -46,21 +46,21 @@ public class Level8 extends LEVEL {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
 		String answer81 = ("o");
-		if (b.getText().equals("nisten")) {
+		if (b.getText().equals("farloid")) {
 			answer81 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer81.equals("tennis")) {
+			if (answer81.equals("Florida")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(0));
-				WordPanel.points += 1;
+				WordPanel.points += 3;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}
 		}
 
 		String answer82 = ("i");
-		if (b.getText().equals("cryhear")) {
+		if (b.getText().equals("hophoptaylers")) {
 			answer82 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer82.equals("archery")) {
+			if (answer82.equals("phosphorylate")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(1));
 				WordPanel.points += 3;
@@ -69,10 +69,10 @@ public class Level8 extends LEVEL {
 			}
 		}
 
-		if (b.getText().equals("nicglcy")) {
+		if (b.getText().equals("whater")) {
 			String answer83 = (".");
 			answer83 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer83.equals("cycling")) {
+			if (answer83.equals("wreath")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(2));
 				WordPanel.points += 3;

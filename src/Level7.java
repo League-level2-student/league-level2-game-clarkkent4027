@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class Level7 extends LEVEL {
 	public Level7() {
 		setBounds(0, 0, 500, 500);
-		JButton b71 = new JButton("oliva");
-		JButton b72 = new JButton("baminetour");
-		JButton b73 = new JButton("moonbert");
+		JButton b71 = new JButton("kingcots");
+		JButton b72 = new JButton("gegone");
+		JButton b73 = new JButton("thorn lope");
 		b71.setBounds(100, 50, 200, 300);
 		b72.setBounds(100, 50, 300, 300);
 		b73.setBounds(100, 50, 400, 300);
@@ -33,12 +33,12 @@ public class Level7 extends LEVEL {
 		g.fillRect(0, 0, GameHome.WIDTH, GameHome.HEIGHT);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("LEVEL 7 : INSTRUMENTS", 60, 100);
+		g.drawString("LEVEL 7 : HOLIDAY", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("O L I V A", 70, 220);
-		g.drawString("B A M I N E T O U R", 70, 340);
-		g.drawString("M O O N B E R T (x2)", 70, 460);
+		g.drawString("K I N G C O T S", 70, 220);
+		g.drawString("G E G O N E", 70, 340);
+		g.drawString("T H O R N  L O P E", 70, 460);
 	}
 
 	@Override
@@ -46,9 +46,9 @@ public class Level7 extends LEVEL {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
 		String answer71 = ("o");
-		if (b.getText().equals("oliva")) {
+		if (b.getText().equals("kingcots")) {
 			answer71 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer71.equals("viola")) {
+			if (answer71.equals("stocking")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(0));
 				WordPanel.points += 1;
@@ -58,9 +58,9 @@ public class Level7 extends LEVEL {
 		}
 
 		String answer72 = ("i");
-		if (b.getText().equals("baminetour")) {
+		if (b.getText().equals("gegone")) {
 			answer72 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer72.equals("tambourine")) {
+			if (answer72.equals("eggnog")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(1));
 				WordPanel.points += 1;
@@ -69,13 +69,13 @@ public class Level7 extends LEVEL {
 			}
 		}
 
-		if (b.getText().equals("moonbert")) {
+		if (b.getText().equals("thorn lope")) {
 			String answer73 = (".");
 			answer73 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer73.equals("trombone")) {
+			if (answer73.equals("North Pole")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(2));
-				WordPanel.points += 2;
+				WordPanel.points += 1;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}

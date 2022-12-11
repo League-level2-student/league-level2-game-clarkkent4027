@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class Level5 extends LEVEL {
 	public Level5() {
 		setBounds(0, 0, 500, 500);
-		JButton b51 = new JButton("laindad");
+		JButton b51 = new JButton("criatsatos");
 		JButton b52 = new JButton("afastani");
-		JButton b53 = new JButton("darwon");
+		JButton b53 = new JButton("pilegens byaetu");
 		b51.setBounds(100, 50, 200, 300);
 		b52.setBounds(100, 50, 300, 300);
 		b53.setBounds(100, 50, 400, 300);
@@ -36,9 +36,9 @@ public class Level5 extends LEVEL {
 		g.drawString("LEVEL 5 : DISNEY MOVIES", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("L A I N D A D", 70, 220);
+		g.drawString("C R I A T S A T O S", 70, 220);
 		g.drawString("A F A S T A N I ", 70, 340);
-		g.drawString("D A R W O N (x3)", 70, 460);
+		g.drawString("P I L E G E N S  B Y A E T U (x2)", 70, 460);
 	}
 
 	@Override
@@ -46,9 +46,9 @@ public class Level5 extends LEVEL {
 		// TODO Auto-generated method stub
 		JButton b = (JButton) e.getSource();
 		String answer51 = ("o");
-		if (b.getText().equals("laindad")) {
+		if (b.getText().equals("criatsatos")) {
 			answer51 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer51.equals("Aladdin")) {
+			if (answer51.equals("Aristocats")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(0));
 				WordPanel.points += 1;
@@ -69,13 +69,13 @@ public class Level5 extends LEVEL {
 			}
 		}
 
-		if (b.getText().equals("darwon")) {
+		if (b.getText().equals("pilegens byaetu")) {
 			String answer53 = (".");
 			answer53 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer53.equals("Onward")) {
+			if (answer53.equals("Sleeping Beauty")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(2));
-				WordPanel.points += 3;
+				WordPanel.points += 2;
 			} else {
 				JOptionPane.showMessageDialog(null, "INCORRECT");
 			}

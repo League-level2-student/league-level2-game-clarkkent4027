@@ -13,7 +13,7 @@ public class Level1 extends LEVEL {
 	public Level1() {
 		int d1;
 		setBounds(0, 0, 500, 500);
-		JButton b11 = new JButton("tucoops");
+		JButton b11 = new JButton("lowbifsh");
 		JButton b12 = new JButton("hisfarts");
 		JButton b13 = new JButton("teamean");
 		b11.setBounds(100, 50, 400, 300);
@@ -39,8 +39,8 @@ public class Level1 extends LEVEL {
 		g.drawString("LEVEL 1 : SEA ANIMALS", 60, 100);
 		g.setFont(titleFont);
 		g.setColor(Color.DARK_GRAY);
-		g.drawString("T U C O O P S", 70, 220);
-		g.drawString("H I S F A R T S", 70, 340);
+		g.drawString("L O W B I F S H", 70, 220);
+		g.drawString("F E Y L J I L H S", 70, 340);
 		g.drawString("T E A M E A N (x2pts)", 70, 460);
 
 	}
@@ -51,9 +51,9 @@ public class Level1 extends LEVEL {
 		JButton b = (JButton) e.getSource();
 		String answer11 = ("o");
 		int d1 = 0;
-		if (b.getText().equals("tucoops")) {
+		if (b.getText().equals("lowbifsh")) {
 			answer11 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer11.equals("octopus")) {
+			if (answer11.equals("blowfish")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(0));
 				WordPanel.points += 1;
@@ -64,9 +64,9 @@ public class Level1 extends LEVEL {
 		}
 
 		String answer12 = ("i");
-		if (b.getText().equals("hisfarts")) {
+		if (b.getText().equals("feyljilhs")) {
 			answer12 = JOptionPane.showInputDialog(null, "What is the answer?");
-			if (answer12.equals("starfish")) {
+			if (answer12.equals("jellyfish")) {
 				JOptionPane.showMessageDialog(null, "CORRECT");
 				remove(buttons.get(1));
 				WordPanel.points += 1;

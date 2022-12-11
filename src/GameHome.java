@@ -47,8 +47,8 @@ public class GameHome implements ActionListener {
 		L4 = new JButton("4 - Colors");
 		L5 = new JButton("5 - Disney Movies");
 		L6 = new JButton("6 - Insects");
-		L7 = new JButton("7 - Instuments");
-		L8 = new JButton("8 - Sports");
+		L7 = new JButton("7 - Holday ");
+		L8 = new JButton("8 - MYSTERY??");
 		RETURN = new JButton("RETURN");
 		score = new JLabel(WordPanel.points + " points");
 		panel.setLayout(null);
